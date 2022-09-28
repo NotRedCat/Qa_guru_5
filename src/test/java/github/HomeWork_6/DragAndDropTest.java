@@ -8,7 +8,7 @@ import static com.codeborne.selenide.Selenide.*;
 
 public class DragAndDropTest {
     @Test
-    void DragAndDropTest(){
+    void dragAndDropTest(){
         Configuration.browserSize="1900x1000";
         //открыть страницу the-internet.herokuapp.com/drag_and_drop
         open("https://the-internet.herokuapp.com/drag_and_drop");
