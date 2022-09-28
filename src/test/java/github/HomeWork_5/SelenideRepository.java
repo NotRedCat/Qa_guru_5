@@ -1,4 +1,4 @@
-package github;
+package github.HomeWork_5;
 
 import org.junit.jupiter.api.Test;
 
