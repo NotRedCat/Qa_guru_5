@@ -13,15 +13,15 @@ import static com.codeborne.selenide.Selenide.$;
 
 public class ContributorsTest {
     @Test
-    void andreiSolntsevShouldContributorsTheMost(){
-        Configuration.browserSize="1900x1000";
+    void andreiSolntsevShouldContributorsTheMost() {
+        Configuration.browserSize = "1900x1000";
         //открыть страницу на github.com/selenide/selenide
         open("https://github.com/selenide/selenide");
         //ввести в поле поиска selenide и нажать Enter
-        $(".Layout-sidebar").$(byText ("Contributors"))
+        $(".Layout-sidebar").$(byText("Contributors"))
                 .ancestor(".BorderGrid-cell").$$("ul li").first()
                 .hover();
-       //Наводим мышь на нужный аватар
+        //Наводим мышь на нужный аватар
         $$(".Popover-message").find(visible).shouldHave(text("Andrei Solntsev"));
         //Проверяем, что в тексте есть Andrei Solntsev
 

@@ -10,11 +10,12 @@ import static com.codeborne.selenide.Selenide.*;
 
 public class TestGitHubMenuAndPricing {
     @BeforeAll
-    static void setConfig(){
+    static void setConfig() {
         Configuration.browserSize = "1900x1000";
         //открыть страницу на github.com
         open("https://github.com");
     }
+
     @Test
     void testMenu() {
         //Навести мышь на пункт меню Open Source
